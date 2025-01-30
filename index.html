@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +13,50 @@
     <!-- Fonts Awsome -->
     <script src="https://kit.fontawesome.com/92ca8848ee.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora {
+            font-family: "Sora", serif;
+        }
+    </style>
 </head>
-<body>
-    <!-- Header Section -->
-    <nav></nav>
 
+<body class="sora max-md:border-b-[#179800] max-md:border-b-2">
+    <!-- Header Section -->
+    <!-- Nav Bar items -->
+    <nav class="container mx-auto mt-8 max-md:pb-4">
+        <div class=" max-md:hidden flex mx-auto justify-between">
+            <a><img src="./c2-assets/logo-header.png" alt=""></a>
+            <div>
+                <ul class="menu menu-horizontal px-1 text-xl font-bold md:text-sm sm:text-[14px] ">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class=" flex gap-3">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="btn px-8 py-3 rounded-lg text-black bg-white border-[#179800] ">Login</div>
+                <div class="btn px-8 py-3 rounded-lg text-white   bg-[#179800]">Register</div>
+            </div>
+        </div>
+        <div class="md:hidden flex items-center justify-between px-3 border-b-[#179800]">
+            <a><img src="./c2-assets/logo-header.png" alt=""></a>
+            <div class="text-[#179800] text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
     <!-- Main Section -->
     <main></main>
 
     <!-- Footer Section -->
     <footer></footer>
 </body>
+
 </html>
