@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title of the Website</title>
+    <title>Nature's Platter</title>
+    <link rel="shortcut icon" href="./c2-assets/logo-header.png" type="image/x-icon">
     <!-- Tailwind Css -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- Daisy UI -->
@@ -21,39 +22,80 @@
             font-family: "Sora", serif;
         }
     </style>
+    <style>
+        .gradient{
+            background: linear-gradient(to bottom, #FFFFFF ,#EFEBE3);
+        }
+    </style>
 </head>
 
-<body class="sora max-md:border-b-[#179800] max-md:border-b-2">
+<body class="sora ">
     <!-- Header Section -->
-    <!-- Nav Bar items -->
-    <nav class="container mx-auto mt-8 max-md:pb-4">
-        <div class=" max-md:hidden flex mx-auto justify-between">
-            <a><img src="./c2-assets/logo-header.png" alt=""></a>
-            <div>
-                <ul class="menu menu-horizontal px-1 text-xl font-bold md:text-sm sm:text-[14px] ">
-                    <li><a>Product</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-3">
-                <div class=" flex gap-3">
-                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+    <div class="gradient">
+        <nav class="container mx-auto mt-8 max-md:pb-4 max-md:border-b-[#179800] max-md:border-b-2">
+            <div class=" max-md:hidden flex mx-auto justify-between">
+                <a><img src="./c2-assets/logo-header.png" alt=""></a>
+                <div>
+                    <ul class="menu menu-horizontal px-1 text-xl font-bold md:text-sm sm:text-[14px] ">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
                 </div>
-                <div class="btn px-8 py-3 rounded-lg text-black bg-white border-[#179800] ">Login</div>
-                <div class="btn px-8 py-3 rounded-lg text-white   bg-[#179800]">Register</div>
+                <div class="flex items-center gap-3">
+                    <div class=" flex gap-3">
+                        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="btn px-8 py-3 rounded-lg text-black bg-white border-[#179800] ">Login</div>
+                    <div class="btn px-8 py-3 rounded-lg text-white   bg-[#179800]">Register</div>
+                </div>
+            </div>
+            <div class="md:hidden flex items-center justify-between px-3 border-b-[#179800]">
+                <a><img src="./c2-assets/logo-header.png" alt=""></a>
+                <div class="text-[#179800] text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="container mx-auto my-12">
+            <div class="text-center px-8">
+                <h1 class="text-[56px] font-semibold max-md:text-[32px]">Freshness <span class="text-[#179800]">You
+                        Can <br>
+                        Count</span> On, Prices You’ll Love!</h1><br>
+                <p class="text-xl text-[#111111] max-md:font-light">Shop your daily essentials at unbeatable prices.
+                    From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="mx-auto">
+                <img class="mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
             </div>
         </div>
-        <div class="md:hidden flex items-center justify-between px-3 border-b-[#179800]">
-            <a><img src="./c2-assets/logo-header.png" alt=""></a>
-            <div class="text-[#179800] text-2xl">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+    </div>
+
     <!-- Main Section -->
-    <main></main>
+    <main>
+        <section class="container mx-auto">
+            <h1 class="max-md:text-2xl text-4xl font-semibold text-[#179800] px-3">Services</h1><br>
+            <div class="flex  gap-6">
+                <div class="bg-[#EFEBE3] w-1/3">
+                    <img class="bg-white p-3 rounded-full" src="./c2-assets/service.png" alt="">
+                    <h1>24/7 Services</h1>
+                    <p>We provide 24h services in 7 days a week to our customers. </p>
+                </div>
+                <div class="bg-[#EFEBE3] w-1/3">
+                    <img src="./c2-assets/delivery.png" alt="">
+                    <h1>Fast Delivery</h1>
+                    <p>We deliver products within the time. You have to just order and we will deliver product to your door step</p>
+                </div>
+                <div class="bg-[#EFEBE3] w-1/3">
+                    <img src="./c2-assets/healthy.png" alt="">
+                    <h1>Healthy Products</h1>
+                    <p>Providing the best possible and fresh products to our customer is our mission and vision</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer></footer>
